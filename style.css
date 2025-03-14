@@ -1,0 +1,115 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the header and nav */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Non-Sticky Header */
+.top-header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    height: 80px; /* Set header height to 80px */
+    padding: 0;
+}
+
+.top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Ensures the content fills the 80px height */
+}
+
+.top-header .logo img {
+    width: 350px;
+    height: auto;
+    margin-left: -200px;
+}
+
+.top-header .header-right {
+    text-align: right;
+}
+
+/* Sticky Navigation Bar */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center; /* This centers the navigation items */
+    align-items: center;
+}
+
+.sticky-header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center nav items */
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.sticky-header ul li {
+    margin-right: 20px;
+}
+
+.sticky-header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sticky-header ul li.phone {
+    margin-left: auto; /* This pushes the phone number to the far right */
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .hero-button {
+    background-color: #FFB74D;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .hero-button:hover {
+    background-color: #FF9800;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
