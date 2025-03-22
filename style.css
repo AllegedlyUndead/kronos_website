@@ -176,7 +176,8 @@
 .services {
     background-color: #e8f5e9;
     text-align: center;
-    padding: 60px 20px;
+    padding:200px 20px;
+    height: 70vh;
 }
 
 .services .container {
@@ -214,6 +215,72 @@
 .service-item p {
     font-size: 1rem;
 }
+
+/* Reviews Section */
+.reviews {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 60px 100px;
+}
+
+.reviews h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2e7d32; /* Dark green for section title */
+}
+
+/* Review List */
+.review-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Individual Review Item */
+.review-item {
+    background-color: #ffffff;
+    padding: 20px; /* Reduced padding */
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    position: relative;
+    max-width: 400px; /* Optional to control width */
+    margin: 0 auto;
+}
+
+/* Review Item Hover Effect */
+.review-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Review Text */
+.review-item p {
+    font-size: 1rem; /* Smaller text */
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Reviewer Name */
+.review-item h4 {
+    font-size: 1rem;
+    color: #2e7d32;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Responsive for Smaller Screens */
+@media (max-width: 768px) {
+    .review-list {
+        grid-template-columns: 1fr; /* Stack on smaller screens */
+    }
+}
+
 
 /* Footer */
 footer {
