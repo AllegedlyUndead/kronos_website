@@ -170,14 +170,12 @@
     }
 }
 
-
-
 /* Services Section */
 .services {
     background-color: #e8f5e9;
     text-align: center;
-    padding:200px 20px;
-    height: 70vh;
+    padding: 60px 20px;
+    height: 50vh;
 }
 
 .services .container {
@@ -218,9 +216,10 @@
 
 /* Reviews Section */
 .reviews {
-    background-color: #f5f5f5;
+    background-color: #e8f5e9; /* Light green */
     text-align: center;
-    padding: 60px 100px;
+    padding: 70px 60px;
+    height: 50vh;
 }
 
 .reviews h2 {
@@ -267,7 +266,7 @@
 
 /* Reviewer Name */
 .review-item h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #2e7d32;
     margin-top: 10px;
     font-weight: bold;
